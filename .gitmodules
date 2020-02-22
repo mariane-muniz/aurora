@@ -10,3 +10,6 @@
 [submodule "auth"]
 	path = auth
 	url = git@github.com:mariane-muniz/aurora-auth.git
+[submodule "core"]
+	path = core
+	url = git@github.com:mariane-muniz/aurora-core.git
