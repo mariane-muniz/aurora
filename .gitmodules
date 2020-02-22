@@ -4,3 +4,6 @@
 [submodule "discovery"]
 	path = discovery
 	url = git@github.com:mariane-muniz/aurora-discovery.git
+[submodule "gateway"]
+	path = gateway
+	url = git@github.com:mariane-muniz/aurora-gateway.git
