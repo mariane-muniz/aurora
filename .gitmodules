@@ -13,3 +13,6 @@
 [submodule "core"]
 	path = core
 	url = git@github.com:mariane-muniz/aurora-core.git
+[submodule "token"]
+	path = token
+	url = git@github.com:mariane-muniz/aurora-token.git
