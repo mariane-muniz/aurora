@@ -23,7 +23,7 @@ spec:
           image: marianemuniz/aurora-discovery:latest
           ports:
             - containerPort: 8081
-        - name: discovery
+        - name: auth
           image: marianemuniz/aurora-auth:latest
           ports:
             - containerPort: 8083
