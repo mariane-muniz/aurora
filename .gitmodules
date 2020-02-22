@@ -1,3 +1,6 @@
 [submodule "configuration"]
 	path = configuration
 	url = git@github.com:mariane-muniz/aurora-configuration.git
+[submodule "discovery"]
+	path = discovery
+	url = git@github.com:mariane-muniz/aurora-discovery.git
