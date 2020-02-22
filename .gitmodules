@@ -7,3 +7,6 @@
 [submodule "gateway"]
 	path = gateway
 	url = git@github.com:mariane-muniz/aurora-gateway.git
+[submodule "auth"]
+	path = auth
+	url = git@github.com:mariane-muniz/aurora-auth.git
