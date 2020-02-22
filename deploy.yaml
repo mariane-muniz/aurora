@@ -68,7 +68,7 @@ metadata:
   name: aurora-auth-service
 spec:
   selector:
-    app: discovery
+    app: auth
   ports:
     - protocol: TCP
       port: 8083
