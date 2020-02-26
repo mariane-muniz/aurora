@@ -21,6 +21,7 @@
         <module>auth</module>
         <module>token</module>
         <module>configuration</module>
+        <module>backend</module>
     </modules>
 
     <properties>
