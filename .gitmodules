@@ -19,3 +19,6 @@
 [submodule "aurora"]
 	path = aurora
 	url = git@github.com:mariane-muniz/aurora-test.git
+[submodule "backend"]
+	path = backend
+	url = git@github.com:mariane-muniz/aurora-backend.git
