@@ -22,3 +22,6 @@
 [submodule "backend"]
 	path = backend
 	url = git@github.com:mariane-muniz/aurora-backend.git
+[submodule "farm-catalog"]
+	path = catalog
+	url = https://github.com/mariane-muniz/farm-catalog.git
