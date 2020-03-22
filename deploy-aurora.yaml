@@ -31,10 +31,6 @@ spec:
           image: marianemuniz/aurora-gateway:latest
           ports:
             - containerPort: 8080
-        - name: backend
-          image: marianemuniz/backend-gateway:latest
-          ports:
-            - containerPort: 8086
       hostNetwork: true
       dnsPolicy: Default
 ---
@@ -100,17 +96,3 @@ spec:
       nodePort: 31003
   type: NodePort
 ---
-
-kind: Service
-apiVersion: v1
-metadata:
-  name: aurora-backend-service
-spec:
-  selector:
-    app: backend
-  ports:
-    - protocol: TCP
-      port: 8086
-      targetPort: 8086
-      nodePort: 31004
-  type: NodePort
