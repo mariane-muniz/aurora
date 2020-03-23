@@ -15,14 +15,6 @@ spec:
         app: aurora
     spec:
       containers:
-        - name: configuration
-          image: marianemuniz/aurora-configuration:latest
-          ports:
-            - containerPort: 8084
-        - name: discovery
-          image: marianemuniz/aurora-discovery:latest
-          ports:
-            - containerPort: 8761
         - name: auth
           image: marianemuniz/aurora-auth:latest
           ports:
@@ -33,37 +25,6 @@ spec:
             - containerPort: 8080
       hostNetwork: true
       dnsPolicy: Default
----
-
-kind: Service
-apiVersion: v1
-metadata:
-  name: aurora-configuration-service
-spec:
-  selector:
-    app: configuration
-  ports:
-    - protocol: TCP
-      port: 8084
-      targetPort: 8084
-      nodePort: 31000
-  type: NodePort
----
-
-kind: Service
-apiVersion: v1
-metadata:
-  name: aurora-discovery-service
-spec:
-  selector:
-    app: discovery
-  ports:
-    - protocol: TCP
-      port: 8761
-      targetPort: 8761
-      nodePort: 31001
-  type: NodePort
-
 ---
 
 kind: Service
@@ -95,5 +56,5 @@ spec:
       targetPort: 8080
       nodePort: 31003
   type: NodePort
----
 
+---

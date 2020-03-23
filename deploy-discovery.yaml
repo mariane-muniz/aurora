@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aurora-discovery-deployment
+  labels:
+    app: aurora
+spec:
+  selector:
+    matchLabels:
+      app: aurora
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: aurora
+    spec:
+      containers:
+        - name: discovery
+          image: marianemuniz/aurora-discovery:latest
+          ports:
+            - containerPort: 8761
+      hostNetwork: true
+      dnsPolicy: Default
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: aurora-discovery-service
+spec:
+  selector:
+    app: discovery
+  ports:
+    - protocol: TCP
+      port: 8761
+      targetPort: 8761
+      nodePort: 31001
+  type: NodePort
