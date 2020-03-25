@@ -19,7 +19,7 @@ spec:
           image: marianemuniz/aurora-configuration:latest
           ports:
             - containerPort: 8084
-        restartPolicy: Always
+      restartPolicy: Always
       hostNetwork: true
       dnsPolicy: Default
 ---
