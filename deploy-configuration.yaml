@@ -17,9 +17,9 @@ spec:
       containers:
         - name: configuration
           image: marianemuniz/aurora-configuration:latest
+          restartPolicy: Always
           ports:
             - containerPort: 8084
-        restartPolicy: Always
       hostNetwork: true
       dnsPolicy: Default
 ---
