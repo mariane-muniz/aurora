@@ -16,9 +16,6 @@
 [submodule "token"]
 	path = token
 	url = git@github.com:mariane-muniz/aurora-token.git
-[submodule "aurora"]
-	path = aurora
-	url = git@github.com:mariane-muniz/aurora-test.git
 [submodule "backend"]
 	path = backend
 	url = git@github.com:mariane-muniz/aurora-backend.git
