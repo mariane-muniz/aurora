@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: farm-stock
+  data:
+    mongodb:
+      uri: mongodb+srv://stock:stock@cluster0-cxj3z.azure.mongodb.net/test?retryWrites=true&w=majority
+server:
+  port: 8030
